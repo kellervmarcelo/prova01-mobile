@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="307dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/supercardapio"
+            android:contentDescription="@string/todo" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_account_box_24"
+            android:drawablePadding="15dp"
+            android:hint="@string/username"
+            android:minHeight="48dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:drawableStart="@drawable/ic_baseline_lock_24" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/blue_primary"
+            android:text="@string/sign_in"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/blue_light_facebook"
+            android:text="@string/sign_in_with_facebook"
+            android:textAllCaps="false"
+            android:textColor="#304FFE"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/red_light_google"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:textColor="@color/red_google"
+            android:textStyle="bold"
+            android:text="@string/sign_in_with_google"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/dont_have_an_account_create_one"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</LinearLayout>

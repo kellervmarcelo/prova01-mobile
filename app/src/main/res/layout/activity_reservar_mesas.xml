@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMesas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <EditText
+            android:id="@+id/editLiberar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número da mesa"
+            android:inputType="number"
+            android:layout_weight="50"/>
+        <Button
+            android:id="@+id/btnLiberar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="Liberar Mesa"
+            android:layout_weight="50"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Operação"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnReservarTodas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar todas as mesas" />
+
+    <Button
+        android:id="@+id/btnConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurações" />
+</LinearLayout>
